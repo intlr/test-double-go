@@ -15,8 +15,13 @@ type MockStore struct {
 	methods map[string]bool
 }
 
+func NewStore() *MockStore {
+	store := &MockStore{methods: make(map[string]bool)}
+
+	return store
+}
+
 func (s *MockStore) ExpectToCall(method string) {
-	once.Do(func() { s.methods = make(map[string]bool) })
 	s.methods[method] = false
 }
 
@@ -30,12 +35,13 @@ func (s *MockStore) Verify(t *testing.T) {
 
 func (s *MockStore) GetCustomerEmail(id int) string {
 	s.methods["GetCustomerEmail"] = true
+
 	return email
 }
 
 func TestService_Get(t *testing.T) {
-	store := MockStore{}
-	serv := service.New(&store)
+	store := NewStore()
+	serv := service.New(store)
 
 	store.ExpectToCall("GetCustomerEmail")
 	got := serv.Get()
