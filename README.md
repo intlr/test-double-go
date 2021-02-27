@@ -10,6 +10,9 @@ procedure to reduce complexity and ease testing is _Test Double_.
 
 From this generic terms come several more precise terms.
 
+The [SUT](/service/service.go) _(System Under Test)_ is a service on which
+we inject doubles to test interactions with its datastore.
+
 ## Dummy
 
 Dummy objects are being passed around without being used.
