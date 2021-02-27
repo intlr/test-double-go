@@ -13,23 +13,24 @@ we inject doubles to test interactions with its datastore.
 
 ## Dummy
 
-Dummy objects are being passed around without being used.
+[Dummys](/dummy/service_test.go) are being passed around without being
+used.
 
 ## Fake
 
-Fake objects have simplified implementations.
+[Fakes](/fake/service_test.go) have simplified implementations.
 
-## Stubs
+## Stub
 
-Stubs are limited to what is defined for the test. It doesn't have
-expectations.
+[Stubs](/stub/service_test.go) are limited to what is defined for the test,
+they don't have expectations.
 
-## Spies
+## Spy
 
-Spies are stubs which also record usage. Expectations are evaluated after
-the execution of the test.
+[Spies](/spy/service_test.go) are stubs recording usage. Expectations are
+evaluated after the execution of the test.
 
-## Mocks
+## Mock
 
-Mocks define expectations before the test is executed and may throw errors
-if an unexpected call was made.
+[Mocks](/mock/service_test.go) define expectations before the test is
+executed, throwing errors if an unexpected call was made.
