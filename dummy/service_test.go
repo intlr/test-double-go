@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/alr-lab/test-double/service"
+	"github.com/alr-lab/test-double-go/service"
 )
 
 type DummyStore struct{}
