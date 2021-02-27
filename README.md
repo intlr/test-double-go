@@ -1,6 +1,4 @@
-# Growth 2021 H1
-
-## Test Double
+# Test Double
 
 Gerard Meszaros introduced the differences between test types in his
 _xUnit Test Patterns_ book published in May 2007.
