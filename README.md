@@ -34,3 +34,8 @@ evaluated after the execution of the test.
 
 [Mocks](/mock/service_test.go) define expectations before the test is
 executed, throwing errors if an unexpected call was made.
+
+## Contributing
+
+Follow the [Contributing](/CONTRIBUTING.md) documentation to learn more
+about how to contribute to this project.
