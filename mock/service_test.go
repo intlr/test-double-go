@@ -1,15 +1,12 @@
 package main
 
 import (
-	"sync"
 	"testing"
 
 	"github.com/alr-lab/test-double-go/service"
 )
 
 const email = "fake"
-
-var once sync.Once
 
 // MockStore describes a mocked datastore, a datastore which is doing some
 // logic but also implements tools to validate expectations after the test
