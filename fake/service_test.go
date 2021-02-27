@@ -33,9 +33,9 @@ func (s FakeStore) GetCustomerEmail(id int) string {
 }
 
 func TestService_Get(t *testing.T) {
-	s := service.New(FakeStore{})
+	serv := service.New(FakeStore{})
 
-	got := s.Get()
+	got := serv.Get()
 	if got != emailValidUser {
 		t.Fatalf("got %q, want %q", got, emailValidUser)
 	}

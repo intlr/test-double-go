@@ -20,9 +20,9 @@ func (s StubStore) GetCustomerEmail(id int) string {
 }
 
 func TestService_Get(t *testing.T) {
-	s := service.New(StubStore{})
+	serv := service.New(StubStore{})
 
-	got := s.Get()
+	got := serv.Get()
 	if got != email {
 		t.Fatalf("got %q, want %q", got, email)
 	}
