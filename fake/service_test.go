@@ -1,6 +1,10 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/alr-lab/test-double/service"
+)
 
 const (
 	emailDefault = ""
@@ -20,7 +24,7 @@ func (s FakeStore) GetCustomerEmail(id int) string {
 }
 
 func TestService_Get(t *testing.T) {
-	s := Service{store: FakeStore{}}
+	s := service.New(FakeStore{})
 
 	got := s.Get()
 	if got != emailValidUser {
