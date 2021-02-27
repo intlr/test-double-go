@@ -8,8 +8,13 @@ import (
 
 const email = "fake"
 
+// StubStore describes a stub datastore, a datastore which is very simple,
+// without much logic.
 type StubStore struct {}
 
+// GetCustomerEmail returns a customer email.
+//
+// A stub method would simply return a fixed value in most cases.
 func (s StubStore) GetCustomerEmail(id int) string {
 	return email
 }
