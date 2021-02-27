@@ -1,6 +1,6 @@
 # Test Double
 
-Gerard Meszaros introduced the differences between test types in his
+Gerard Meszaros introduced the differences between test objects in his
 _xUnit Test Patterns_ book published in May 2007.
 
 The generic term he used to define a simplified version of an object or
