@@ -1,6 +1,10 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/alr-lab/test-double/service"
+)
 
 type DummyStore struct{}
 
@@ -9,5 +13,5 @@ func (s DummyStore) GetCustomerEmail(id int) string {
 }
 
 func TestServer_New(t *testing.T) {
-	_ = New(DummyStore{})
+	_ = service.New(DummyStore{})
 }
