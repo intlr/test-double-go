@@ -10,7 +10,7 @@ const email = "fake"
 
 // StubStore describes a stub datastore, a datastore which is very simple,
 // without much logic.
-type StubStore struct {}
+type StubStore struct{}
 
 // GetCustomerEmail returns a customer email.
 //

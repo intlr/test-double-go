@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	emailDefault = ""
+	emailDefault   = ""
 	emailValidUser = "fake"
 )
 
@@ -15,7 +15,7 @@ const (
 // kind of logic but not the one that we might expect in production. It
 // allows us to take shortcuts and return errors to validate the behaviour
 // of the system under test during the test execution.
-type FakeStore struct {}
+type FakeStore struct{}
 
 // GetCustomerEmail returns a customer email.
 //
