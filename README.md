@@ -1,5 +1,8 @@
 # Test Double
 
+[![GoDoc](https://godoc.org/github.com/alr-lab/test-double-go?status.svg)](https://godoc.org/github.com/alr-lab/test-double-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/alr-lab/test-double-go)](https://goreportcard.com/report/github.com/alr-lab/test-double-go)
+
 Gerard Meszaros introduced the differences between test objects in his
 _xUnit Test Patterns_ book published in May 2007.
 
